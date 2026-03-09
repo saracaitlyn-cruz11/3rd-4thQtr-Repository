@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="2Q Portfolio"/>
+    <meta name="author" content="SC Cruz" />
+    <title>Cruz Portfolio</title>
+    
+    <link rel="stylesheet" href="stylesheet.css"/>
+    <script src="q41gjava.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <form id="movie-form">
+        <h1>Add a Movie</h1>
+        <fieldset>
+            <label for="title">Title:</label>
+            <input type="text" id="title" required >
+
+            <label for="year">Year:</label>
+            <input type="number" id="year" required>
+
+            <label for="genre">Genre:</label>
+            <select id="genre">
+                <option value="Action">Action</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Drama">Drama</option>
+                <option value="Horror">Horror</option>
+                <option value="Sci-Fi">Sci-Fi</option>
+                <option value="Romance">Romance</option>
+            </select>
+
+            <div class="rating">
+                <label>Rating:</label>
+                <div class="stars">
+                    <i class="fa-solid fa-star" data-value="1"></i>
+                    <i class="fa-solid fa-star" data-value="2"></i>
+                    <i class="fa-solid fa-star" data-value="3"></i>
+                    <i class="fa-solid fa-star" data-value="4"></i>
+                    <i class="fa-solid fa-star" data-value="5"></i>
+                </div>
+                <input type="hidden" id="rating-value" value="0">
+            </div>
+        </fieldset>
+        
+        <input type="submit" value="Add Movie">
+    </form>
+
+    <div id="movie-list-section">
+        <h2>Movie List</h2>
+        <div id="movie-list-container">
+            </div>
+    </div>
+</div>
+
+</body>
+</html>
