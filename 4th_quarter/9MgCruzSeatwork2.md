@@ -66,7 +66,7 @@ ANSWER: In relative position, what changes is how many pixels away from a respec
 
 - Guided Question: What happens when you scroll the page? Why does the footer behave differently from position relative?
 
-ANSWER: The footer behaves differently from position relative since it is is declared as "fixed". Given that it is fixed in position, it won't move in position even when scrolling up/down the page. Essentially, compared to relative, relative moves relative to its position on screen, whilst staying fixed will not move it. 
+ANSWER: The footer behaves differently from position relative since it is is declared as "fixed". Given that it is fixed in position, it won't move in position even when scrolling up/down the page. Essentially, compared to relative, relative moves relative to its position on screen, whilst staying fixed will not move it. It is in reference to the browser rather than the original spot.
 
 ### Step 3 (Absolute):
 
@@ -74,7 +74,7 @@ ANSWER: The footer behaves differently from position relative since it is is dec
 
 - Guided Question: What is the effect of position: absolute on an element? How is it different from fixed?: 
 
-Absolute position,is the closest element for its position. Unlike the fixed positioning, it moves away/to top, bottom, left, and right according to the elements around it. 
+Absolute position,is the closest element for its position. Unlike the fixed positioning, it moves away/to top, bottom, left, and right according to the elements around it. It is in reference to the nearest element or body.
 
 ### Step 4 : (Absolute)
 
@@ -93,7 +93,7 @@ Absolute position,is the closest element for its position. Unlike the fixed posi
 
 - Give .content a z-index: 1.
 
-- Guided Question: Why does the notice appear on top of the content? What happens if you swap the z‑index values?: Z-index values determine the placement of the element on the page. The higher the z-index is, the higher "priority" for it to be placed on the screen.
+- Guided Question: Why does the notice appear on top of the content? What happens if you swap the z‑index values?: Z-index values determine the placement of the element on the page. The higher the z-index is, the higher "priority" for it to be placed on the screen. Essentially, it is the number/order for the stacking placement of the elements.
 
 - Challenge: 
     * What changes that you have to do on the code that will position .notice box on the top right corner of the .content box? Please write the code on paper as well (both html and css on the part of .notice and .content).
@@ -103,21 +103,26 @@ Absolute position,is the closest element for its position. Unlike the fixed posi
 
     * What do you observe on about the effect of z-index on .notice and .content boxes?
     
-    ANSWER: Z-index will determine the position relative to being on top/bottom of other elements on the viewport. Higher the z-index, its position on the screen becomes higher.
+    ANSWER: Z-index will determine the position relative to being on top/bottom of other elements on the viewport. Higher the z-index, its position on the screen becomes higher on top of the other elements.
 
 3. Please answer the following reflection questions (15 minutes)
 
-    a. Could you summarize the differences between the CSS position values (static, relative, absolute, fixed)? 
-
+    a. Could you summarize the differences between the CSS position values (static, relative, absolute, fixed)?
+ANSWER:
     In summary:
-    - relative positions changes the position based on the viewport or website's flow; the reference point is the main viewport's dimensions itself
-    - absolute positions changes the position based on the closest element visible or on the viewport
-    - fixed positions chn
+    - Relative: positions changes the position based on the viewport or website's flow; the reference point is the main viewport's dimensions itself
+    - Absolute: positions changes the position based on the closest element or body visible or on the viewport
+    - Fixed: stays in a specific spot regardless of scrolling past other elements
+    - Static: the default setting; elements just follow the normal page flow
 
     b. How does absolute positioning depend on its parent element?
 
-    ANSWER: Ab
+    ANSWER: As previously stated, absolute positioning relies on the nearest element.If a parent element is found, it uses that element as a reference for its position. If there are no parent elements on the viewport, it functions the same as a relative,where it positions itself relative to the body.
 
     c. How do you differentiate sticky from fixed (you can research on sticky)?
 
+   ANSWER: Usingfixed removes the element entirely fromthe flow so that it stays at the specific spot on the screen at all times. Sticky, on the other hand, only appears to be fixed depending on a certain point within it parent container or element.
+
     d. If you were designing a webpage for a school event, how might you use positioning to highlight important information? Please give concrete examples.
+
+   ANSWER: For important information such as "Schedule" or "Primer" they should use a fixed position for students to constantly seen it on their viewports no matter how far they scroll down for the specific event details. Sticky position can be utilized for a header/navigation menu with other significant details of the school event like attire, venue, etc. These will only be seen whilst clicking on the "More Info" section. Lastly, I will use the absolute positioning for specific updates for events that need registration (such as workshops, talks, etc). With this, students can see immediately the status of a given activity they much register for quickly beside the respective element.
