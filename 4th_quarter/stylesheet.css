@@ -1,0 +1,149 @@
+body {
+    background-color: #e0f2fe; 
+    font-family: 'Outfit', sans-serif;
+    color: #1e293b;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border: 1px solid #bae6fd;
+    width: 100%;
+    max-width: 450px; 
+}
+
+form {
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+h1, h2 {
+    font-weight: 700;
+    color: #0369a1;
+    text-align: center;
+    margin-top: 0;
+}
+
+h1 { 
+    font-size: 1.8rem; 
+    margin-bottom: 20px; 
+}
+
+h2 { 
+    font-size: 1.5rem; 
+    margin: 20px 0 15px 0; 
+    border-top: 1px solid #f1f5f9; 
+    padding-top: 20px; 
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+    color: #334155;
+}
+
+input[type="text"], 
+input[type="number"], 
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+}
+
+.stars {
+    display: flex;
+    gap: 8px;
+    font-size: 1.5rem;
+    color: #e2e8f0;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.stars i.active {
+    color: #fbbf24;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: #0284c7;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0369a1;
+}
+
+#movie-list-section {
+    width: 100%;
+}
+
+.movie-item {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+}
+
+.list-stars {
+    color: #fbbf24;
+    margin-left: 5px;
+}
+
+.movie-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-btn {
+    background-color: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    padding: 4px 10px;
+    cursor: pointer;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.8rem;
+    transition: background 0.2s;
+}
+
+.delete-btn:hover {
+    background-color: #fee2e2;
+    border-color: #ef4444;
+    color: #ef4444;
+}
+
+.movie-item i {
+    font-size: 0.9rem;
+    margin-right: 1px;
+}
